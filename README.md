@@ -34,7 +34,7 @@ http://replace-with-your-ngrok-public-https-link
 
 The back-end code will integrate with this database. However, it may be occasionally useful interact with the database directly from the command line:
 
-- connect to the database server from the command line: `docker exec -ti mongodb_dockerhub mongo -u admin -p secret`
+- connect to the database server from the command line: `docker exec -ti mongodb_dockerhub mongosh -u admin -p secret`
 - show the available databases: `show dbs`
 - select the database used by this app: `use example-mern-stack-app`
 - show the documents stored in the `messages` collection: `db.messages.find()` - this will be empty at first, but will later be populated by the app.
@@ -112,3 +112,7 @@ Initial set up of MongoDB database:
 - access the mongo shell with `docker exec -it mongodb_dockerhub mongo -u admin -p secret`
 - run command, `show dbs` within the mongo shell to see a list of databases
 - type `exit` to quit the shell after you confirm it is working
+
+
+Here's the link for the ngrok app
+https://80cb-2603-7000-2bf0-85f0-f494-6c5d-e6a2-7576.ngrok-free.app/
